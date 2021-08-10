@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Restaurant Website</title>
+</head>
+<body>
+  <section class="showcase active">
+    <header>
+      <h2 class="logo">Fill Life Restaurant</h2>
+      <div class="toggle active"></div>
+    </header>
+    <video src="videos/Egg in a bowl.mp4" muted loop autoplay ></video>
+
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Healthy&nbsp;Food</h2>
+      <h3>Ends with Healthy&nbsp;Talk</h3>
+      <p>create an happy environment where absolute guest satisfaction is our highest priority</p>
+      <a href="#">Place Order</a>
+    </div>
+
+    <ul class="social">
+      <li><a href="#"><img src="images/facebook.jpg"></a></li>
+      <li><a href="#"><img src="images/watsapp.jpg"></a></li>
+      <li><a href="#"><img src="images/instagram.jpg"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Cuisine</a></li>
+      <li><a href="#">Direction</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Review</a></li>
+    </ul>
+  </div>
+
+  <script>
+    const menuToggle = document.querySelector('.toggle')
+    const showcase = document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active')
+      showcase.classList.toggle('active')
+    })
+  </script>
+
+</body>
+</html>
